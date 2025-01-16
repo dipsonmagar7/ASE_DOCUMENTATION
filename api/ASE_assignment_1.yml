@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_assignment
+  commentId: N:ASE_assignment
+  id: ASE_assignment
+  children:
+  - ASE_assignment.CommandWrite
+  langs:
+  - csharp
+  - vb
+  name: ASE_assignment
+  nameWithType: ASE_assignment
+  fullName: ASE_assignment
+  type: Namespace
+  assemblies:
+  - ASE_Dipson
+references:
+- uid: ASE_assignment.CommandWrite
+  commentId: T:ASE_assignment.CommandWrite
+  href: ASE_assignment.CommandWrite.html
+  name: CommandWrite
+  nameWithType: CommandWrite
+  fullName: ASE_assignment.CommandWrite

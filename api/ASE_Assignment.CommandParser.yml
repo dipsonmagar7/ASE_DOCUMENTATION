@@ -1,0 +1,455 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Assignment.CommandParser
+  commentId: T:ASE_Assignment.CommandParser
+  id: CommandParser
+  parent: ASE_Assignment
+  children:
+  - ASE_Assignment.CommandParser.#ctor(BOOSE.ICanvas,System.Windows.Forms.TextBox)
+  - ASE_Assignment.CommandParser.ProcessCommand(System.String)
+  langs:
+  - csharp
+  - vb
+  name: CommandParser
+  nameWithType: CommandParser
+  fullName: ASE_Assignment.CommandParser
+  type: Class
+  source:
+    remote:
+      path: ASE Assignment/CommandParser.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-dipsonmagar7.git
+    id: CommandParser
+    path: CommandParser.cs
+    startLine: 9
+  assemblies:
+  - ASE_Dipson
+  namespace: ASE_Assignment
+  summary: A class responsible for parsing and processing commands, integrating with a drawing canvas and error display.
+  example: []
+  syntax:
+    content: public class CommandParser
+    content.vb: Public Class CommandParser
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ASE_Assignment.CommandParser.#ctor(BOOSE.ICanvas,System.Windows.Forms.TextBox)
+  commentId: M:ASE_Assignment.CommandParser.#ctor(BOOSE.ICanvas,System.Windows.Forms.TextBox)
+  id: '#ctor(BOOSE.ICanvas,System.Windows.Forms.TextBox)'
+  parent: ASE_Assignment.CommandParser
+  langs:
+  - csharp
+  - vb
+  name: CommandParser(ICanvas, TextBox)
+  nameWithType: CommandParser.CommandParser(ICanvas, TextBox)
+  fullName: ASE_Assignment.CommandParser.CommandParser(BOOSE.ICanvas, System.Windows.Forms.TextBox)
+  type: Constructor
+  source:
+    remote:
+      path: ASE Assignment/CommandParser.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-dipsonmagar7.git
+    id: .ctor
+    path: CommandParser.cs
+    startLine: 22
+  assemblies:
+  - ASE_Dipson
+  namespace: ASE_Assignment
+  summary: >-
+    Initializes a new instance of the <xref href="ASE_Assignment.CommandParser" data-throw-if-not-resolved="false"></xref> class.
+
+    Sets up the command parser with the specified canvas and error display box.
+  example: []
+  syntax:
+    content: public CommandParser(ICanvas canvas, TextBox errorMessageBox)
+    parameters:
+    - id: canvas
+      type: BOOSE.ICanvas
+      description: The canvas where commands will be executed.
+    - id: errorMessageBox
+      type: System.Windows.Forms.TextBox
+      description: The text box to display error messages.
+    content.vb: Public Sub New(canvas As ICanvas, errorMessageBox As TextBox)
+  overload: ASE_Assignment.CommandParser.#ctor*
+  nameWithType.vb: CommandParser.New(ICanvas, TextBox)
+  fullName.vb: ASE_Assignment.CommandParser.New(BOOSE.ICanvas, System.Windows.Forms.TextBox)
+  name.vb: New(ICanvas, TextBox)
+- uid: ASE_Assignment.CommandParser.ProcessCommand(System.String)
+  commentId: M:ASE_Assignment.CommandParser.ProcessCommand(System.String)
+  id: ProcessCommand(System.String)
+  parent: ASE_Assignment.CommandParser
+  langs:
+  - csharp
+  - vb
+  name: ProcessCommand(string)
+  nameWithType: CommandParser.ProcessCommand(string)
+  fullName: ASE_Assignment.CommandParser.ProcessCommand(string)
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/CommandParser.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-dipsonmagar7.git
+    id: ProcessCommand
+    path: CommandParser.cs
+    startLine: 37
+  assemblies:
+  - ASE_Dipson
+  namespace: ASE_Assignment
+  summary: >-
+    Processes and executes the given command string.
+
+    Handles parsing, execution, and error reporting.
+  example: []
+  syntax:
+    content: public void ProcessCommand(string command)
+    parameters:
+    - id: command
+      type: System.String
+      description: The command to be processed.
+    content.vb: Public Sub ProcessCommand(command As String)
+  overload: ASE_Assignment.CommandParser.ProcessCommand*
+  nameWithType.vb: CommandParser.ProcessCommand(String)
+  fullName.vb: ASE_Assignment.CommandParser.ProcessCommand(String)
+  name.vb: ProcessCommand(String)
+references:
+- uid: ASE_Assignment
+  commentId: N:ASE_Assignment
+  href: ASE_Assignment.html
+  name: ASE_Assignment
+  nameWithType: ASE_Assignment
+  fullName: ASE_Assignment
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ASE_Assignment.CommandParser
+  commentId: T:ASE_Assignment.CommandParser
+  href: ASE_Assignment.CommandParser.html
+  name: CommandParser
+  nameWithType: CommandParser
+  fullName: ASE_Assignment.CommandParser
+- uid: ASE_Assignment.CommandParser.#ctor*
+  commentId: Overload:ASE_Assignment.CommandParser.#ctor
+  href: ASE_Assignment.CommandParser.html#ASE_Assignment_CommandParser__ctor_BOOSE_ICanvas_System_Windows_Forms_TextBox_
+  name: CommandParser
+  nameWithType: CommandParser.CommandParser
+  fullName: ASE_Assignment.CommandParser.CommandParser
+  nameWithType.vb: CommandParser.New
+  fullName.vb: ASE_Assignment.CommandParser.New
+  name.vb: New
+- uid: BOOSE.ICanvas
+  commentId: T:BOOSE.ICanvas
+  parent: BOOSE
+  isExternal: true
+  name: ICanvas
+  nameWithType: ICanvas
+  fullName: BOOSE.ICanvas
+- uid: System.Windows.Forms.TextBox
+  commentId: T:System.Windows.Forms.TextBox
+  parent: System.Windows.Forms
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.forms.textbox
+  name: TextBox
+  nameWithType: TextBox
+  fullName: System.Windows.Forms.TextBox
+- uid: BOOSE
+  commentId: N:BOOSE
+  isExternal: true
+  name: BOOSE
+  nameWithType: BOOSE
+  fullName: BOOSE
+- uid: System.Windows.Forms
+  commentId: N:System.Windows.Forms
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows.Forms
+  nameWithType: System.Windows.Forms
+  fullName: System.Windows.Forms
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Forms
+    name: Forms
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.forms
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Forms
+    name: Forms
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.forms
+- uid: ASE_Assignment.CommandParser.ProcessCommand*
+  commentId: Overload:ASE_Assignment.CommandParser.ProcessCommand
+  href: ASE_Assignment.CommandParser.html#ASE_Assignment_CommandParser_ProcessCommand_System_String_
+  name: ProcessCommand
+  nameWithType: CommandParser.ProcessCommand
+  fullName: ASE_Assignment.CommandParser.ProcessCommand
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

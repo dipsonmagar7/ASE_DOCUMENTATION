@@ -1,0 +1,1426 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Assignment.AppCanvas
+  commentId: T:ASE_Assignment.AppCanvas
+  id: AppCanvas
+  parent: ASE_Assignment
+  children:
+  - ASE_Assignment.AppCanvas.#ctor
+  - ASE_Assignment.AppCanvas.Circle(System.Int32,System.Boolean)
+  - ASE_Assignment.AppCanvas.Clear
+  - ASE_Assignment.AppCanvas.DrawTo(System.Int32,System.Int32)
+  - ASE_Assignment.AppCanvas.MoveTo(System.Int32,System.Int32)
+  - ASE_Assignment.AppCanvas.PenColour
+  - ASE_Assignment.AppCanvas.Rect(System.Int32,System.Int32,System.Boolean)
+  - ASE_Assignment.AppCanvas.Reset
+  - ASE_Assignment.AppCanvas.Set(System.Int32,System.Int32)
+  - ASE_Assignment.AppCanvas.SetColour(System.Int32,System.Int32,System.Int32)
+  - ASE_Assignment.AppCanvas.Tri(System.Int32,System.Int32)
+  - ASE_Assignment.AppCanvas.WriteText(System.String)
+  - ASE_Assignment.AppCanvas.Xpos
+  - ASE_Assignment.AppCanvas.Ypos
+  - ASE_Assignment.AppCanvas.getBitmap
+  langs:
+  - csharp
+  - vb
+  name: AppCanvas
+  nameWithType: AppCanvas
+  fullName: ASE_Assignment.AppCanvas
+  type: Class
+  source:
+    remote:
+      path: ASE Assignment/AppCanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-dipsonmagar7.git
+    id: AppCanvas
+    path: AppCanvas.cs
+    startLine: 22
+  assemblies:
+  - ASE_Dipson
+  namespace: ASE_Assignment
+  summary: Represents a canvas for drawing various shapes and handling pen operations.
+  example: []
+  syntax:
+    content: 'public class AppCanvas : ICanvas'
+    content.vb: Public Class AppCanvas Implements ICanvas
+  inheritance:
+  - System.Object
+  implements:
+  - BOOSE.ICanvas
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ASE_Assignment.AppCanvas.#ctor
+  commentId: M:ASE_Assignment.AppCanvas.#ctor
+  id: '#ctor'
+  parent: ASE_Assignment.AppCanvas
+  langs:
+  - csharp
+  - vb
+  name: AppCanvas()
+  nameWithType: AppCanvas.AppCanvas()
+  fullName: ASE_Assignment.AppCanvas.AppCanvas()
+  type: Constructor
+  source:
+    remote:
+      path: ASE Assignment/AppCanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-dipsonmagar7.git
+    id: .ctor
+    path: AppCanvas.cs
+    startLine: 37
+  assemblies:
+  - ASE_Dipson
+  namespace: ASE_Assignment
+  summary: Initializes a new instance of the <xref href="ASE_Assignment.AppCanvas" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public AppCanvas()
+    content.vb: Public Sub New()
+  overload: ASE_Assignment.AppCanvas.#ctor*
+  nameWithType.vb: AppCanvas.New()
+  fullName.vb: ASE_Assignment.AppCanvas.New()
+  name.vb: New()
+- uid: ASE_Assignment.AppCanvas.Xpos
+  commentId: P:ASE_Assignment.AppCanvas.Xpos
+  id: Xpos
+  parent: ASE_Assignment.AppCanvas
+  langs:
+  - csharp
+  - vb
+  name: Xpos
+  nameWithType: AppCanvas.Xpos
+  fullName: ASE_Assignment.AppCanvas.Xpos
+  type: Property
+  source:
+    remote:
+      path: ASE Assignment/AppCanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-dipsonmagar7.git
+    id: Xpos
+    path: AppCanvas.cs
+    startLine: 54
+  assemblies:
+  - ASE_Dipson
+  namespace: ASE_Assignment
+  summary: Gets or sets the X-coordinate of the current pen position.
+  example: []
+  syntax:
+    content: public int Xpos { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Xpos As Integer
+  overload: ASE_Assignment.AppCanvas.Xpos*
+  implements:
+  - BOOSE.ICanvas.Xpos
+- uid: ASE_Assignment.AppCanvas.Ypos
+  commentId: P:ASE_Assignment.AppCanvas.Ypos
+  id: Ypos
+  parent: ASE_Assignment.AppCanvas
+  langs:
+  - csharp
+  - vb
+  name: Ypos
+  nameWithType: AppCanvas.Ypos
+  fullName: ASE_Assignment.AppCanvas.Ypos
+  type: Property
+  source:
+    remote:
+      path: ASE Assignment/AppCanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-dipsonmagar7.git
+    id: Ypos
+    path: AppCanvas.cs
+    startLine: 63
+  assemblies:
+  - ASE_Dipson
+  namespace: ASE_Assignment
+  summary: Gets or sets the Y-coordinate of the current pen position.
+  example: []
+  syntax:
+    content: public int Ypos { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Ypos As Integer
+  overload: ASE_Assignment.AppCanvas.Ypos*
+  implements:
+  - BOOSE.ICanvas.Ypos
+- uid: ASE_Assignment.AppCanvas.PenColour
+  commentId: P:ASE_Assignment.AppCanvas.PenColour
+  id: PenColour
+  parent: ASE_Assignment.AppCanvas
+  langs:
+  - csharp
+  - vb
+  name: PenColour
+  nameWithType: AppCanvas.PenColour
+  fullName: ASE_Assignment.AppCanvas.PenColour
+  type: Property
+  source:
+    remote:
+      path: ASE Assignment/AppCanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-dipsonmagar7.git
+    id: PenColour
+    path: AppCanvas.cs
+    startLine: 72
+  assemblies:
+  - ASE_Dipson
+  namespace: ASE_Assignment
+  summary: Gets or sets the pen color.
+  example: []
+  syntax:
+    content: public object PenColour { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Property PenColour As Object
+  overload: ASE_Assignment.AppCanvas.PenColour*
+  implements:
+  - BOOSE.ICanvas.PenColour
+- uid: ASE_Assignment.AppCanvas.Circle(System.Int32,System.Boolean)
+  commentId: M:ASE_Assignment.AppCanvas.Circle(System.Int32,System.Boolean)
+  id: Circle(System.Int32,System.Boolean)
+  parent: ASE_Assignment.AppCanvas
+  langs:
+  - csharp
+  - vb
+  name: Circle(int, bool)
+  nameWithType: AppCanvas.Circle(int, bool)
+  fullName: ASE_Assignment.AppCanvas.Circle(int, bool)
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/AppCanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-dipsonmagar7.git
+    id: Circle
+    path: AppCanvas.cs
+    startLine: 94
+  assemblies:
+  - ASE_Dipson
+  namespace: ASE_Assignment
+  summary: Draws a circle on the canvas.
+  example: []
+  syntax:
+    content: public void Circle(int radius, bool filled)
+    parameters:
+    - id: radius
+      type: System.Int32
+      description: The radius of the circle.
+    - id: filled
+      type: System.Boolean
+      description: Whether the circle is filled.
+    content.vb: Public Sub Circle(radius As Integer, filled As Boolean)
+  overload: ASE_Assignment.AppCanvas.Circle*
+  implements:
+  - BOOSE.ICanvas.Circle(System.Int32,System.Boolean)
+  nameWithType.vb: AppCanvas.Circle(Integer, Boolean)
+  fullName.vb: ASE_Assignment.AppCanvas.Circle(Integer, Boolean)
+  name.vb: Circle(Integer, Boolean)
+- uid: ASE_Assignment.AppCanvas.Clear
+  commentId: M:ASE_Assignment.AppCanvas.Clear
+  id: Clear
+  parent: ASE_Assignment.AppCanvas
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: AppCanvas.Clear()
+  fullName: ASE_Assignment.AppCanvas.Clear()
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/AppCanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-dipsonmagar7.git
+    id: Clear
+    path: AppCanvas.cs
+    startLine: 122
+  assemblies:
+  - ASE_Dipson
+  namespace: ASE_Assignment
+  summary: Clears the canvas.
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: ASE_Assignment.AppCanvas.Clear*
+  implements:
+  - BOOSE.ICanvas.Clear
+- uid: ASE_Assignment.AppCanvas.DrawTo(System.Int32,System.Int32)
+  commentId: M:ASE_Assignment.AppCanvas.DrawTo(System.Int32,System.Int32)
+  id: DrawTo(System.Int32,System.Int32)
+  parent: ASE_Assignment.AppCanvas
+  langs:
+  - csharp
+  - vb
+  name: DrawTo(int, int)
+  nameWithType: AppCanvas.DrawTo(int, int)
+  fullName: ASE_Assignment.AppCanvas.DrawTo(int, int)
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/AppCanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-dipsonmagar7.git
+    id: DrawTo
+    path: AppCanvas.cs
+    startLine: 141
+  assemblies:
+  - ASE_Dipson
+  namespace: ASE_Assignment
+  summary: Draws a line from the current pen position to the specified position.
+  example: []
+  syntax:
+    content: public void DrawTo(int x, int y)
+    parameters:
+    - id: x
+      type: System.Int32
+      description: The X-coordinate of the end position.
+    - id: y
+      type: System.Int32
+      description: The Y-coordinate of the end position.
+    content.vb: Public Sub DrawTo(x As Integer, y As Integer)
+  overload: ASE_Assignment.AppCanvas.DrawTo*
+  implements:
+  - BOOSE.ICanvas.DrawTo(System.Int32,System.Int32)
+  nameWithType.vb: AppCanvas.DrawTo(Integer, Integer)
+  fullName.vb: ASE_Assignment.AppCanvas.DrawTo(Integer, Integer)
+  name.vb: DrawTo(Integer, Integer)
+- uid: ASE_Assignment.AppCanvas.getBitmap
+  commentId: M:ASE_Assignment.AppCanvas.getBitmap
+  id: getBitmap
+  parent: ASE_Assignment.AppCanvas
+  langs:
+  - csharp
+  - vb
+  name: getBitmap()
+  nameWithType: AppCanvas.getBitmap()
+  fullName: ASE_Assignment.AppCanvas.getBitmap()
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/AppCanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-dipsonmagar7.git
+    id: getBitmap
+    path: AppCanvas.cs
+    startLine: 162
+  assemblies:
+  - ASE_Dipson
+  namespace: ASE_Assignment
+  summary: Retrieves the bitmap representing the canvas.
+  example: []
+  syntax:
+    content: public object getBitmap()
+    return:
+      type: System.Object
+      description: The canvas bitmap.
+    content.vb: Public Function getBitmap() As Object
+  overload: ASE_Assignment.AppCanvas.getBitmap*
+  implements:
+  - BOOSE.ICanvas.getBitmap
+- uid: ASE_Assignment.AppCanvas.MoveTo(System.Int32,System.Int32)
+  commentId: M:ASE_Assignment.AppCanvas.MoveTo(System.Int32,System.Int32)
+  id: MoveTo(System.Int32,System.Int32)
+  parent: ASE_Assignment.AppCanvas
+  langs:
+  - csharp
+  - vb
+  name: MoveTo(int, int)
+  nameWithType: AppCanvas.MoveTo(int, int)
+  fullName: ASE_Assignment.AppCanvas.MoveTo(int, int)
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/AppCanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-dipsonmagar7.git
+    id: MoveTo
+    path: AppCanvas.cs
+    startLine: 179
+  assemblies:
+  - ASE_Dipson
+  namespace: ASE_Assignment
+  summary: Moves the pen to the specified position without drawing.
+  example: []
+  syntax:
+    content: public void MoveTo(int x, int y)
+    parameters:
+    - id: x
+      type: System.Int32
+      description: The X-coordinate of the new position.
+    - id: y
+      type: System.Int32
+      description: The Y-coordinate of the new position.
+    content.vb: Public Sub MoveTo(x As Integer, y As Integer)
+  overload: ASE_Assignment.AppCanvas.MoveTo*
+  implements:
+  - BOOSE.ICanvas.MoveTo(System.Int32,System.Int32)
+  nameWithType.vb: AppCanvas.MoveTo(Integer, Integer)
+  fullName.vb: ASE_Assignment.AppCanvas.MoveTo(Integer, Integer)
+  name.vb: MoveTo(Integer, Integer)
+- uid: ASE_Assignment.AppCanvas.Rect(System.Int32,System.Int32,System.Boolean)
+  commentId: M:ASE_Assignment.AppCanvas.Rect(System.Int32,System.Int32,System.Boolean)
+  id: Rect(System.Int32,System.Int32,System.Boolean)
+  parent: ASE_Assignment.AppCanvas
+  langs:
+  - csharp
+  - vb
+  name: Rect(int, int, bool)
+  nameWithType: AppCanvas.Rect(int, int, bool)
+  fullName: ASE_Assignment.AppCanvas.Rect(int, int, bool)
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/AppCanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-dipsonmagar7.git
+    id: Rect
+    path: AppCanvas.cs
+    startLine: 201
+  assemblies:
+  - ASE_Dipson
+  namespace: ASE_Assignment
+  summary: Draws a rectangle on the canvas.
+  example: []
+  syntax:
+    content: public void Rect(int width, int height, bool filled)
+    parameters:
+    - id: width
+      type: System.Int32
+      description: The width of the rectangle.
+    - id: height
+      type: System.Int32
+      description: The height of the rectangle.
+    - id: filled
+      type: System.Boolean
+      description: Whether the rectangle is filled.
+    content.vb: Public Sub Rect(width As Integer, height As Integer, filled As Boolean)
+  overload: ASE_Assignment.AppCanvas.Rect*
+  implements:
+  - BOOSE.ICanvas.Rect(System.Int32,System.Int32,System.Boolean)
+  nameWithType.vb: AppCanvas.Rect(Integer, Integer, Boolean)
+  fullName.vb: ASE_Assignment.AppCanvas.Rect(Integer, Integer, Boolean)
+  name.vb: Rect(Integer, Integer, Boolean)
+- uid: ASE_Assignment.AppCanvas.Reset
+  commentId: M:ASE_Assignment.AppCanvas.Reset
+  id: Reset
+  parent: ASE_Assignment.AppCanvas
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: AppCanvas.Reset()
+  fullName: ASE_Assignment.AppCanvas.Reset()
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/AppCanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-dipsonmagar7.git
+    id: Reset
+    path: AppCanvas.cs
+    startLine: 230
+  assemblies:
+  - ASE_Dipson
+  namespace: ASE_Assignment
+  summary: Resets the canvas to its initial state.
+  example: []
+  syntax:
+    content: public void Reset()
+    content.vb: Public Sub Reset()
+  overload: ASE_Assignment.AppCanvas.Reset*
+  implements:
+  - BOOSE.ICanvas.Reset
+- uid: ASE_Assignment.AppCanvas.Set(System.Int32,System.Int32)
+  commentId: M:ASE_Assignment.AppCanvas.Set(System.Int32,System.Int32)
+  id: Set(System.Int32,System.Int32)
+  parent: ASE_Assignment.AppCanvas
+  langs:
+  - csharp
+  - vb
+  name: Set(int, int)
+  nameWithType: AppCanvas.Set(int, int)
+  fullName: ASE_Assignment.AppCanvas.Set(int, int)
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/AppCanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-dipsonmagar7.git
+    id: Set
+    path: AppCanvas.cs
+    startLine: 249
+  assemblies:
+  - ASE_Dipson
+  namespace: ASE_Assignment
+  summary: Sets the canvas size.
+  example: []
+  syntax:
+    content: public void Set(int xsize, int ysize)
+    parameters:
+    - id: xsize
+      type: System.Int32
+      description: The width of the canvas.
+    - id: ysize
+      type: System.Int32
+      description: The height of the canvas.
+    content.vb: Public Sub [Set](xsize As Integer, ysize As Integer)
+  overload: ASE_Assignment.AppCanvas.Set*
+  implements:
+  - BOOSE.ICanvas.Set(System.Int32,System.Int32)
+  nameWithType.vb: AppCanvas.Set(Integer, Integer)
+  fullName.vb: ASE_Assignment.AppCanvas.Set(Integer, Integer)
+  name.vb: Set(Integer, Integer)
+- uid: ASE_Assignment.AppCanvas.SetColour(System.Int32,System.Int32,System.Int32)
+  commentId: M:ASE_Assignment.AppCanvas.SetColour(System.Int32,System.Int32,System.Int32)
+  id: SetColour(System.Int32,System.Int32,System.Int32)
+  parent: ASE_Assignment.AppCanvas
+  langs:
+  - csharp
+  - vb
+  name: SetColour(int, int, int)
+  nameWithType: AppCanvas.SetColour(int, int, int)
+  fullName: ASE_Assignment.AppCanvas.SetColour(int, int, int)
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/AppCanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-dipsonmagar7.git
+    id: SetColour
+    path: AppCanvas.cs
+    startLine: 272
+  assemblies:
+  - ASE_Dipson
+  namespace: ASE_Assignment
+  summary: Sets the pen color.
+  example: []
+  syntax:
+    content: public void SetColour(int red, int green, int blue)
+    parameters:
+    - id: red
+      type: System.Int32
+      description: Red component (0-255).
+    - id: green
+      type: System.Int32
+      description: Green component (0-255).
+    - id: blue
+      type: System.Int32
+      description: Blue component (0-255).
+    content.vb: Public Sub SetColour(red As Integer, green As Integer, blue As Integer)
+  overload: ASE_Assignment.AppCanvas.SetColour*
+  implements:
+  - BOOSE.ICanvas.SetColour(System.Int32,System.Int32,System.Int32)
+  nameWithType.vb: AppCanvas.SetColour(Integer, Integer, Integer)
+  fullName.vb: ASE_Assignment.AppCanvas.SetColour(Integer, Integer, Integer)
+  name.vb: SetColour(Integer, Integer, Integer)
+- uid: ASE_Assignment.AppCanvas.Tri(System.Int32,System.Int32)
+  commentId: M:ASE_Assignment.AppCanvas.Tri(System.Int32,System.Int32)
+  id: Tri(System.Int32,System.Int32)
+  parent: ASE_Assignment.AppCanvas
+  langs:
+  - csharp
+  - vb
+  name: Tri(int, int)
+  nameWithType: AppCanvas.Tri(int, int)
+  fullName: ASE_Assignment.AppCanvas.Tri(int, int)
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/AppCanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-dipsonmagar7.git
+    id: Tri
+    path: AppCanvas.cs
+    startLine: 293
+  assemblies:
+  - ASE_Dipson
+  namespace: ASE_Assignment
+  summary: Draws a triangle on the canvas.
+  example: []
+  syntax:
+    content: public void Tri(int width, int height)
+    parameters:
+    - id: width
+      type: System.Int32
+      description: The base width of the triangle.
+    - id: height
+      type: System.Int32
+      description: The height of the triangle.
+    content.vb: Public Sub Tri(width As Integer, height As Integer)
+  overload: ASE_Assignment.AppCanvas.Tri*
+  implements:
+  - BOOSE.ICanvas.Tri(System.Int32,System.Int32)
+  nameWithType.vb: AppCanvas.Tri(Integer, Integer)
+  fullName.vb: ASE_Assignment.AppCanvas.Tri(Integer, Integer)
+  name.vb: Tri(Integer, Integer)
+- uid: ASE_Assignment.AppCanvas.WriteText(System.String)
+  commentId: M:ASE_Assignment.AppCanvas.WriteText(System.String)
+  id: WriteText(System.String)
+  parent: ASE_Assignment.AppCanvas
+  langs:
+  - csharp
+  - vb
+  name: WriteText(string)
+  nameWithType: AppCanvas.WriteText(string)
+  fullName: ASE_Assignment.AppCanvas.WriteText(string)
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/AppCanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-dipsonmagar7.git
+    id: WriteText
+    path: AppCanvas.cs
+    startLine: 319
+  assemblies:
+  - ASE_Dipson
+  namespace: ASE_Assignment
+  summary: Writes text on the canvas.
+  example: []
+  syntax:
+    content: public void WriteText(string text)
+    parameters:
+    - id: text
+      type: System.String
+      description: The text to write.
+    content.vb: Public Sub WriteText(text As String)
+  overload: ASE_Assignment.AppCanvas.WriteText*
+  implements:
+  - BOOSE.ICanvas.WriteText(System.String)
+  nameWithType.vb: AppCanvas.WriteText(String)
+  fullName.vb: ASE_Assignment.AppCanvas.WriteText(String)
+  name.vb: WriteText(String)
+references:
+- uid: ASE_Assignment
+  commentId: N:ASE_Assignment
+  href: ASE_Assignment.html
+  name: ASE_Assignment
+  nameWithType: ASE_Assignment
+  fullName: ASE_Assignment
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: BOOSE.ICanvas
+  commentId: T:BOOSE.ICanvas
+  parent: BOOSE
+  isExternal: true
+  name: ICanvas
+  nameWithType: ICanvas
+  fullName: BOOSE.ICanvas
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BOOSE
+  commentId: N:BOOSE
+  isExternal: true
+  name: BOOSE
+  nameWithType: BOOSE
+  fullName: BOOSE
+- uid: ASE_Assignment.AppCanvas
+  commentId: T:ASE_Assignment.AppCanvas
+  href: ASE_Assignment.AppCanvas.html
+  name: AppCanvas
+  nameWithType: AppCanvas
+  fullName: ASE_Assignment.AppCanvas
+- uid: ASE_Assignment.AppCanvas.#ctor*
+  commentId: Overload:ASE_Assignment.AppCanvas.#ctor
+  href: ASE_Assignment.AppCanvas.html#ASE_Assignment_AppCanvas__ctor
+  name: AppCanvas
+  nameWithType: AppCanvas.AppCanvas
+  fullName: ASE_Assignment.AppCanvas.AppCanvas
+  nameWithType.vb: AppCanvas.New
+  fullName.vb: ASE_Assignment.AppCanvas.New
+  name.vb: New
+- uid: ASE_Assignment.AppCanvas.Xpos*
+  commentId: Overload:ASE_Assignment.AppCanvas.Xpos
+  href: ASE_Assignment.AppCanvas.html#ASE_Assignment_AppCanvas_Xpos
+  name: Xpos
+  nameWithType: AppCanvas.Xpos
+  fullName: ASE_Assignment.AppCanvas.Xpos
+- uid: BOOSE.ICanvas.Xpos
+  commentId: P:BOOSE.ICanvas.Xpos
+  parent: BOOSE.ICanvas
+  isExternal: true
+  name: Xpos
+  nameWithType: ICanvas.Xpos
+  fullName: BOOSE.ICanvas.Xpos
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ASE_Assignment.AppCanvas.Ypos*
+  commentId: Overload:ASE_Assignment.AppCanvas.Ypos
+  href: ASE_Assignment.AppCanvas.html#ASE_Assignment_AppCanvas_Ypos
+  name: Ypos
+  nameWithType: AppCanvas.Ypos
+  fullName: ASE_Assignment.AppCanvas.Ypos
+- uid: BOOSE.ICanvas.Ypos
+  commentId: P:BOOSE.ICanvas.Ypos
+  parent: BOOSE.ICanvas
+  isExternal: true
+  name: Ypos
+  nameWithType: ICanvas.Ypos
+  fullName: BOOSE.ICanvas.Ypos
+- uid: ASE_Assignment.AppCanvas.PenColour*
+  commentId: Overload:ASE_Assignment.AppCanvas.PenColour
+  href: ASE_Assignment.AppCanvas.html#ASE_Assignment_AppCanvas_PenColour
+  name: PenColour
+  nameWithType: AppCanvas.PenColour
+  fullName: ASE_Assignment.AppCanvas.PenColour
+- uid: BOOSE.ICanvas.PenColour
+  commentId: P:BOOSE.ICanvas.PenColour
+  parent: BOOSE.ICanvas
+  isExternal: true
+  name: PenColour
+  nameWithType: ICanvas.PenColour
+  fullName: BOOSE.ICanvas.PenColour
+- uid: ASE_Assignment.AppCanvas.Circle*
+  commentId: Overload:ASE_Assignment.AppCanvas.Circle
+  href: ASE_Assignment.AppCanvas.html#ASE_Assignment_AppCanvas_Circle_System_Int32_System_Boolean_
+  name: Circle
+  nameWithType: AppCanvas.Circle
+  fullName: ASE_Assignment.AppCanvas.Circle
+- uid: BOOSE.ICanvas.Circle(System.Int32,System.Boolean)
+  commentId: M:BOOSE.ICanvas.Circle(System.Int32,System.Boolean)
+  parent: BOOSE.ICanvas
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: Circle(int, bool)
+  nameWithType: ICanvas.Circle(int, bool)
+  fullName: BOOSE.ICanvas.Circle(int, bool)
+  nameWithType.vb: ICanvas.Circle(Integer, Boolean)
+  fullName.vb: BOOSE.ICanvas.Circle(Integer, Boolean)
+  name.vb: Circle(Integer, Boolean)
+  spec.csharp:
+  - uid: BOOSE.ICanvas.Circle(System.Int32,System.Boolean)
+    name: Circle
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: BOOSE.ICanvas.Circle(System.Int32,System.Boolean)
+    name: Circle
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ASE_Assignment.AppCanvas.Clear*
+  commentId: Overload:ASE_Assignment.AppCanvas.Clear
+  href: ASE_Assignment.AppCanvas.html#ASE_Assignment_AppCanvas_Clear
+  name: Clear
+  nameWithType: AppCanvas.Clear
+  fullName: ASE_Assignment.AppCanvas.Clear
+- uid: BOOSE.ICanvas.Clear
+  commentId: M:BOOSE.ICanvas.Clear
+  parent: BOOSE.ICanvas
+  isExternal: true
+  name: Clear()
+  nameWithType: ICanvas.Clear()
+  fullName: BOOSE.ICanvas.Clear()
+  spec.csharp:
+  - uid: BOOSE.ICanvas.Clear
+    name: Clear
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSE.ICanvas.Clear
+    name: Clear
+    isExternal: true
+  - name: (
+  - name: )
+- uid: ASE_Assignment.AppCanvas.DrawTo*
+  commentId: Overload:ASE_Assignment.AppCanvas.DrawTo
+  href: ASE_Assignment.AppCanvas.html#ASE_Assignment_AppCanvas_DrawTo_System_Int32_System_Int32_
+  name: DrawTo
+  nameWithType: AppCanvas.DrawTo
+  fullName: ASE_Assignment.AppCanvas.DrawTo
+- uid: BOOSE.ICanvas.DrawTo(System.Int32,System.Int32)
+  commentId: M:BOOSE.ICanvas.DrawTo(System.Int32,System.Int32)
+  parent: BOOSE.ICanvas
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: DrawTo(int, int)
+  nameWithType: ICanvas.DrawTo(int, int)
+  fullName: BOOSE.ICanvas.DrawTo(int, int)
+  nameWithType.vb: ICanvas.DrawTo(Integer, Integer)
+  fullName.vb: BOOSE.ICanvas.DrawTo(Integer, Integer)
+  name.vb: DrawTo(Integer, Integer)
+  spec.csharp:
+  - uid: BOOSE.ICanvas.DrawTo(System.Int32,System.Int32)
+    name: DrawTo
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: BOOSE.ICanvas.DrawTo(System.Int32,System.Int32)
+    name: DrawTo
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: ASE_Assignment.AppCanvas.getBitmap*
+  commentId: Overload:ASE_Assignment.AppCanvas.getBitmap
+  href: ASE_Assignment.AppCanvas.html#ASE_Assignment_AppCanvas_getBitmap
+  name: getBitmap
+  nameWithType: AppCanvas.getBitmap
+  fullName: ASE_Assignment.AppCanvas.getBitmap
+- uid: BOOSE.ICanvas.getBitmap
+  commentId: M:BOOSE.ICanvas.getBitmap
+  parent: BOOSE.ICanvas
+  isExternal: true
+  name: getBitmap()
+  nameWithType: ICanvas.getBitmap()
+  fullName: BOOSE.ICanvas.getBitmap()
+  spec.csharp:
+  - uid: BOOSE.ICanvas.getBitmap
+    name: getBitmap
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSE.ICanvas.getBitmap
+    name: getBitmap
+    isExternal: true
+  - name: (
+  - name: )
+- uid: ASE_Assignment.AppCanvas.MoveTo*
+  commentId: Overload:ASE_Assignment.AppCanvas.MoveTo
+  href: ASE_Assignment.AppCanvas.html#ASE_Assignment_AppCanvas_MoveTo_System_Int32_System_Int32_
+  name: MoveTo
+  nameWithType: AppCanvas.MoveTo
+  fullName: ASE_Assignment.AppCanvas.MoveTo
+- uid: BOOSE.ICanvas.MoveTo(System.Int32,System.Int32)
+  commentId: M:BOOSE.ICanvas.MoveTo(System.Int32,System.Int32)
+  parent: BOOSE.ICanvas
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: MoveTo(int, int)
+  nameWithType: ICanvas.MoveTo(int, int)
+  fullName: BOOSE.ICanvas.MoveTo(int, int)
+  nameWithType.vb: ICanvas.MoveTo(Integer, Integer)
+  fullName.vb: BOOSE.ICanvas.MoveTo(Integer, Integer)
+  name.vb: MoveTo(Integer, Integer)
+  spec.csharp:
+  - uid: BOOSE.ICanvas.MoveTo(System.Int32,System.Int32)
+    name: MoveTo
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: BOOSE.ICanvas.MoveTo(System.Int32,System.Int32)
+    name: MoveTo
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: ASE_Assignment.AppCanvas.Rect*
+  commentId: Overload:ASE_Assignment.AppCanvas.Rect
+  href: ASE_Assignment.AppCanvas.html#ASE_Assignment_AppCanvas_Rect_System_Int32_System_Int32_System_Boolean_
+  name: Rect
+  nameWithType: AppCanvas.Rect
+  fullName: ASE_Assignment.AppCanvas.Rect
+- uid: BOOSE.ICanvas.Rect(System.Int32,System.Int32,System.Boolean)
+  commentId: M:BOOSE.ICanvas.Rect(System.Int32,System.Int32,System.Boolean)
+  parent: BOOSE.ICanvas
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: Rect(int, int, bool)
+  nameWithType: ICanvas.Rect(int, int, bool)
+  fullName: BOOSE.ICanvas.Rect(int, int, bool)
+  nameWithType.vb: ICanvas.Rect(Integer, Integer, Boolean)
+  fullName.vb: BOOSE.ICanvas.Rect(Integer, Integer, Boolean)
+  name.vb: Rect(Integer, Integer, Boolean)
+  spec.csharp:
+  - uid: BOOSE.ICanvas.Rect(System.Int32,System.Int32,System.Boolean)
+    name: Rect
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: BOOSE.ICanvas.Rect(System.Int32,System.Int32,System.Boolean)
+    name: Rect
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: ASE_Assignment.AppCanvas.Reset*
+  commentId: Overload:ASE_Assignment.AppCanvas.Reset
+  href: ASE_Assignment.AppCanvas.html#ASE_Assignment_AppCanvas_Reset
+  name: Reset
+  nameWithType: AppCanvas.Reset
+  fullName: ASE_Assignment.AppCanvas.Reset
+- uid: BOOSE.ICanvas.Reset
+  commentId: M:BOOSE.ICanvas.Reset
+  parent: BOOSE.ICanvas
+  isExternal: true
+  name: Reset()
+  nameWithType: ICanvas.Reset()
+  fullName: BOOSE.ICanvas.Reset()
+  spec.csharp:
+  - uid: BOOSE.ICanvas.Reset
+    name: Reset
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSE.ICanvas.Reset
+    name: Reset
+    isExternal: true
+  - name: (
+  - name: )
+- uid: ASE_Assignment.AppCanvas.Set*
+  commentId: Overload:ASE_Assignment.AppCanvas.Set
+  href: ASE_Assignment.AppCanvas.html#ASE_Assignment_AppCanvas_Set_System_Int32_System_Int32_
+  name: Set
+  nameWithType: AppCanvas.Set
+  fullName: ASE_Assignment.AppCanvas.Set
+- uid: BOOSE.ICanvas.Set(System.Int32,System.Int32)
+  commentId: M:BOOSE.ICanvas.Set(System.Int32,System.Int32)
+  parent: BOOSE.ICanvas
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: Set(int, int)
+  nameWithType: ICanvas.Set(int, int)
+  fullName: BOOSE.ICanvas.Set(int, int)
+  nameWithType.vb: ICanvas.Set(Integer, Integer)
+  fullName.vb: BOOSE.ICanvas.Set(Integer, Integer)
+  name.vb: Set(Integer, Integer)
+  spec.csharp:
+  - uid: BOOSE.ICanvas.Set(System.Int32,System.Int32)
+    name: Set
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: BOOSE.ICanvas.Set(System.Int32,System.Int32)
+    name: Set
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: ASE_Assignment.AppCanvas.SetColour*
+  commentId: Overload:ASE_Assignment.AppCanvas.SetColour
+  href: ASE_Assignment.AppCanvas.html#ASE_Assignment_AppCanvas_SetColour_System_Int32_System_Int32_System_Int32_
+  name: SetColour
+  nameWithType: AppCanvas.SetColour
+  fullName: ASE_Assignment.AppCanvas.SetColour
+- uid: BOOSE.ICanvas.SetColour(System.Int32,System.Int32,System.Int32)
+  commentId: M:BOOSE.ICanvas.SetColour(System.Int32,System.Int32,System.Int32)
+  parent: BOOSE.ICanvas
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: SetColour(int, int, int)
+  nameWithType: ICanvas.SetColour(int, int, int)
+  fullName: BOOSE.ICanvas.SetColour(int, int, int)
+  nameWithType.vb: ICanvas.SetColour(Integer, Integer, Integer)
+  fullName.vb: BOOSE.ICanvas.SetColour(Integer, Integer, Integer)
+  name.vb: SetColour(Integer, Integer, Integer)
+  spec.csharp:
+  - uid: BOOSE.ICanvas.SetColour(System.Int32,System.Int32,System.Int32)
+    name: SetColour
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: BOOSE.ICanvas.SetColour(System.Int32,System.Int32,System.Int32)
+    name: SetColour
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: ASE_Assignment.AppCanvas.Tri*
+  commentId: Overload:ASE_Assignment.AppCanvas.Tri
+  href: ASE_Assignment.AppCanvas.html#ASE_Assignment_AppCanvas_Tri_System_Int32_System_Int32_
+  name: Tri
+  nameWithType: AppCanvas.Tri
+  fullName: ASE_Assignment.AppCanvas.Tri
+- uid: BOOSE.ICanvas.Tri(System.Int32,System.Int32)
+  commentId: M:BOOSE.ICanvas.Tri(System.Int32,System.Int32)
+  parent: BOOSE.ICanvas
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: Tri(int, int)
+  nameWithType: ICanvas.Tri(int, int)
+  fullName: BOOSE.ICanvas.Tri(int, int)
+  nameWithType.vb: ICanvas.Tri(Integer, Integer)
+  fullName.vb: BOOSE.ICanvas.Tri(Integer, Integer)
+  name.vb: Tri(Integer, Integer)
+  spec.csharp:
+  - uid: BOOSE.ICanvas.Tri(System.Int32,System.Int32)
+    name: Tri
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: BOOSE.ICanvas.Tri(System.Int32,System.Int32)
+    name: Tri
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: ASE_Assignment.AppCanvas.WriteText*
+  commentId: Overload:ASE_Assignment.AppCanvas.WriteText
+  href: ASE_Assignment.AppCanvas.html#ASE_Assignment_AppCanvas_WriteText_System_String_
+  name: WriteText
+  nameWithType: AppCanvas.WriteText
+  fullName: ASE_Assignment.AppCanvas.WriteText
+- uid: BOOSE.ICanvas.WriteText(System.String)
+  commentId: M:BOOSE.ICanvas.WriteText(System.String)
+  parent: BOOSE.ICanvas
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: WriteText(string)
+  nameWithType: ICanvas.WriteText(string)
+  fullName: BOOSE.ICanvas.WriteText(string)
+  nameWithType.vb: ICanvas.WriteText(String)
+  fullName.vb: BOOSE.ICanvas.WriteText(String)
+  name.vb: WriteText(String)
+  spec.csharp:
+  - uid: BOOSE.ICanvas.WriteText(System.String)
+    name: WriteText
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSE.ICanvas.WriteText(System.String)
+    name: WriteText
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
